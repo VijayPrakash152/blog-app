@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_seo_metadata",
+  "info": {
+    "displayName": "Metadata",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "keywords": {
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.keyword",
+      "max": 10
+    }
+  }
+}

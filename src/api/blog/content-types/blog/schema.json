@@ -38,6 +38,11 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "blogs"
+    },
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.metadata"
     }
   }
 }
