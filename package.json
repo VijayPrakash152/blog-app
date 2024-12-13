@@ -9,7 +9,7 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "strapi": "strapi",
-    "copy-files": "cp ./ca.pem ./dist/"
+    "copy-files": "mkdir -p dist && cp ca.pem dist/"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.4.1",
