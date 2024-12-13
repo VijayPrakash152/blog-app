@@ -4,11 +4,12 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    "build": "strapi build",
+    "build": "npm run copy-files && strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "copy-files": "cp ./ca.pem ./dist/"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.4.1",
